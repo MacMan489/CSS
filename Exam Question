@@ -1,0 +1,306 @@
+EXAM02 CIS385 Web Programming 1 PART1-EMBEDDED CSS Conversion 
+1. Convert the rectangleform.html CSS to embedded CSS. Call the modified web page as exam21.html.(50 pts) erimeter Input File: rectangleform.html utput File: exa 21.html 
+2-EXTERNAL CSS Conversion Convert the exam21.html CSS to external CSS. Call the modi fied web page as exam22.html and the external CSS file as exam22.css.(50 pts) ength Input File: exan21.html tput File: exam22.html, exan22.ess HOW TO DELIVER:
+
+
+
+
+
+
+
+
+
+
+The embedded css is nothing but giving the css styles inside the head section of the Html
+
+e.g,
+
+>html>
+
+<style type = "text/css">
+
+whatever styles is considered as embedded css
+
+</style>
+
+<head>
+
+</head>
+
+<body></body>
+
+</html>
+
+The code which designed same as given below, the code for embedded style.
+
+************************HTML & CSS*****************************
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style type = "text/css">
+
+.content
+
+{
+
+width: 25%;
+
+height: 25%;
+
+position: absolute;
+
+left:0;
+
+right:0;
+
+top:0;
+
+bottom:0;
+
+margin: auto;
+
+background:lightgrey;
+
+}
+
+.formTable
+
+{
+
+position:relative;
+
+width:100%
+
+}
+
+h2
+
+{
+
+text-align:center;
+
+}
+
+.buttons
+
+{
+
+margin-left: 13px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class ="content">
+
+<h2>Rectangle</h2>
+
+<table class="formTable">
+
+<tr>
+
+<td>Length: </td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td>Width: </td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td>Area: </td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td colspan="2">
+
+<button class="buttons">Area</button>
+
+<button class="buttons">Perimeter</button>
+
+<button clas="buttons">Back</button>
+
+<button class="buttons">Reset</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+</html>
+
+*****************************************END*********************************
+
+The bolder text in above code the embedded css
+
+2Q. The external css is nothing but when you add your styles in a seperate file as css
+
+e.g,
+
+<html>
+
+<link rel="stylesheet"href="c:/xxx/xxxx.css"x/link>. This refers the external style located in different location
+
+<head>
+
+</head>
+
+<body></body>
+
+</html>
+
+with extension css
+
+*****************************************HTML******************************************
+
+<IOCTYPEhtml>
+
+<html>
+
+<head>
+
+<body>
+
+<div class="content">
+
+<h2>Rectangle</h2>
+
+<table class="formTable">
+
+<tr>
+
+<td>Length: </td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td>Width: </td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td>Area:</td>
+
+<td><input type="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td>Perimeter: </td>
+
+<td><input type ="text"/> </td>
+
+</tr>
+
+<tr>
+
+<td colspan="2">
+
+<button class="buttons">Area</button>
+
+<button class="buttons">Perimeter</button>
+
+<button class="buttons">Back</button>
+
+<button class="buttons">Reset</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+</html>
+
+*************************************END*******************************
+
+Copy the above code in the file with html extension
+
+for css style
+
+**********************************CSS*******************************************
+
+.content
+
+{
+
+width: 25%;
+
+height: 25%;
+
+position: absolute;
+
+left:0;
+
+right:0;
+
+top:0;
+
+bottom:0;
+
+margin: auto;
+
+background:lightgrey;
+
+}
+
+.formTable
+
+{
+
+position:relative;
+
+width:100%
+
+}
+
+h2
+
+{
+
+text-align:center;
+
+}
+
+.buttons
+
+{
+
+margin-left: 13px;
+
+}
